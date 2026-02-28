@@ -46,7 +46,7 @@ export default function HorizontalCourseCard({ course, sectionTitle }) {
           />
         )}
 
-        {/* image */}
+       
         <div className="relative w-35 h-23.75 rounded-xl overflow-hidden shrink-0">
           <img
             src={course.image}
@@ -55,15 +55,13 @@ export default function HorizontalCourseCard({ course, sectionTitle }) {
           />
         </div>
 
-        {/* content */}
         <div className="flex-1 text-left">
-          {/* rating */}
+  
           <div className="text-[12px] text-[#6F6F6F] flex items-center gap-1 mb-1">
             <Star size={12} className="text-yellow-400 fill-yellow-400" />
             <span>4.9 | 200+ learners</span>
           </div>
 
-          {/* tags */}
           <div className="flex flex-wrap gap-1 mb-1">
             <span className="px-2 py-0.5 text-[10px] rounded-full border border-blue-300 text-blue-600 bg-blue-50">
               {course.category[0]}
@@ -75,30 +73,31 @@ export default function HorizontalCourseCard({ course, sectionTitle }) {
               {course.category[2]}
             </span>
           </div>
-
-          {/* title */}
           <h3 className="text-[13px] font-semibold text-[#2A2A2A] line-clamp-2">
             {course.title}
           </h3>
 
-          {/* author */}
           <p className="text-[11px] text-[#6F6F6F] mt-1">
             By: <span className="font-medium">Daniel james</span>
           </p>
 
-          {/* footer */}
-          <div className="flex items-center justify-between mt-2 text-[12px] text-[#444]">
-            <div className="flex items-center gap-3">
-              <span className="flex items-center gap-1">
+          <div className="flex items-end justify-between mt-2 text-[12px] text-[#444]">
+    
+            <div className="flex items-center gap-2 sm:gap-3 flex-wrap min-w-0">
+              <span className="flex items-center gap-1 whitespace-nowrap">
                 <Users size={13} /> {course.age}
               </span>
-              <span className="flex items-center gap-1">
+
+              <span className="flex items-center gap-1 whitespace-nowrap">
                 <Clock size={13} /> {course.lessons}
               </span>
-              <span className="font-semibold">₹ {course.price}</span>
+
+              <span className="font-semibold whitespace-nowrap">
+                ₹ {course.price}
+              </span>
             </div>
 
-            <button className="h-8 w-8 rounded-full bg-[#F3F3F3] flex items-center justify-center hover:bg-[#EAEAEA] transition">
+            <button className="ml-2 shrink-0 h-8 w-8 rounded-full bg-[#F3F3F3] flex items-center justify-center hover:bg-[#EAEAEA] transition">
               <ShoppingCart size={16} />
             </button>
           </div>
