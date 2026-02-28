@@ -14,15 +14,12 @@ Rahul Dubey
 
 Replicate the Course Browse Page web design from the provided Figma prototype using React and TailwindCSS.
 
----
-
 ## Live Links
 
 Hosted Page: https://course-browse-ivory.vercel.app/
 GitHub Repository: https://github.com/dubeyRahul26/course-browse
 Video Walkthrough: https://drive.google.com/file/d/1vWIboguGYHuT5TWzBOUk8GNEEhTeWwqf/view?usp=sharing
 
----
 
 ## Tech Stack
 
